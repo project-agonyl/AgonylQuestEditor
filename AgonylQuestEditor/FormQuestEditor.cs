@@ -116,7 +116,7 @@ namespace AgonylQuestEditor
 
                 if (!Utils.IsEmptyData(this.RewardItemIdTextbox1.Text))
                 {
-                    Utils.ReplaceBytesAt(ref outFileData, 44, BitConverter.GetBytes(Convert.ToUInt16(this.RewardItemIdTextbox1.Text)));
+                    Utils.ReplaceBytesAt(ref outFileData, 44, BitConverter.GetBytes(Convert.ToUInt32(this.RewardItemIdTextbox1.Text)));
                 }
 
                 if (!Utils.IsEmptyData(this.RewardItemCountTextbox1.Text))
@@ -126,7 +126,7 @@ namespace AgonylQuestEditor
 
                 if (!Utils.IsEmptyData(this.RewardItemIdTextbox2.Text))
                 {
-                    Utils.ReplaceBytesAt(ref outFileData, 44 + (1 * 4), BitConverter.GetBytes(Convert.ToUInt16(this.RewardItemIdTextbox2.Text)));
+                    Utils.ReplaceBytesAt(ref outFileData, 44 + (1 * 4), BitConverter.GetBytes(Convert.ToUInt32(this.RewardItemIdTextbox2.Text)));
                 }
 
                 if (!Utils.IsEmptyData(this.RewardItemCountTextbox2.Text))
@@ -136,7 +136,7 @@ namespace AgonylQuestEditor
 
                 if (!Utils.IsEmptyData(this.RewardItemIdTextbox3.Text))
                 {
-                    Utils.ReplaceBytesAt(ref outFileData, 44 + (2 * 4), BitConverter.GetBytes(Convert.ToUInt16(this.RewardItemIdTextbox3.Text)));
+                    Utils.ReplaceBytesAt(ref outFileData, 44 + (2 * 4), BitConverter.GetBytes(Convert.ToUInt32(this.RewardItemIdTextbox3.Text)));
                 }
 
                 if (!Utils.IsEmptyData(this.RewardItemCountTextbox3.Text))
